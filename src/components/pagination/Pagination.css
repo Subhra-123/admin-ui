@@ -1,0 +1,19 @@
+.pagination{
+    display: flex;;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    margin-right: 20%;
+}
+.arrow-icon{
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 100%;
+    background-color: rgba(25,144,254,255);
+    color: white;
+}
+.disabled{
+    color: rgb(111, 109, 109);
+    background-color: rgba(210, 205, 205, 0.2);
+    cursor:not-allowed
+}
