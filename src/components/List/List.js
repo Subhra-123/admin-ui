@@ -52,17 +52,16 @@ const List = ({
         const numOfPage = Math.ceil(result.data.length / 10);
 
         setNoOfPage(numOfPage);
-        setCurrList(selectedList(result.data, selectedPage));
       } catch (err) {
         console.log(err);
       }
     };
     getList();
-  }, []);
+  }, [setList,setGlobalList,setNoOfPage]);
 
   useEffect(() => {
     setCurrList(selectedList(list, selectedPage));
-  }, [selectedPage, searchTerm]);
+  }, [selectedPage, searchTerm,list,setCurrList]);
 
   return (
     <Grid container>
